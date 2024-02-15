@@ -1,0 +1,24 @@
+/* css:cascading style sheets */
+
+.round-image
+{
+    width:200px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+.title
+{
+    text-align: center;
+}
+
+.content
+{
+    color:gray;
+    font:20px;
+    font-family:궁서체;
+    text-align: center;
+}
