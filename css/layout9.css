@@ -1,0 +1,92 @@
+div, textarea{
+    border: 1px solid yellowgreen;
+    width: 400px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.nav li{
+    display: inline-block;
+    width: 60px;
+    background-color: violet;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus
+{
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+
+a:hover{
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+}
+
+.back-image{
+    background-image: url(../images/cafe.jpg);
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative
+}
+
+.image-title{
+    color: lightseagreen;
+    font-size: 24px;
+    padding-top: 100px;
+    padding-left: 11%;
+}
+
+.image-content1{
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 10%;
+}
+
+.image-content2{
+    color: lightseagreen;
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 11%;
+}
+
+.image-button{
+    /*
+    position : relative 원래 위치를 기준으로 이동
+    position : absolute (relative인)부모를 기준으로 이동
+    */
+    position: absolute;
+    background: none;
+    border-radius: 10px;
+    left: 11.2%;
+    width: 100px;
+    height: 50px;
+    color: green;
+}
+
+.image-button:hover {
+    background-color: green; /* 마우스를 올렸을 때 배경색 변경 */
+    color: white;
+    text-decoration: underline;
+}
+
+.target{
+    position: relative;
+    top: -20px;
+    left: 400px;
+}

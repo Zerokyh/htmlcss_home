@@ -1,0 +1,105 @@
+.nav1 li
+{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav2 li
+{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    width: 170px;
+}
+
+.nav1{
+    text-align: right;
+}
+
+.nav1 a,
+.nav1 a:link,
+.nav1 a:visited,
+.nav1 a:active,
+.nav1 a:focus
+{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.nav1 a:hover{
+    text-decoration: underline;
+    color: black;
+    font-size: 12px;
+}
+
+.nav2 a,
+.nav2 a:link,
+.nav2 a:visited,
+.nav2 a:active,
+.nav2 a:focus
+{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav2 a:hover{
+    background-color: black;
+    text-decoration: underline;
+    color: green;
+    font-size: 16px;
+    padding-bottom: 35px;
+}
+
+.back-image{
+    background-image: url(../images/cafe.jpg);
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative
+}
+
+.image-title{
+    color: lightseagreen;
+    font-size: 24px;
+    padding-top: 100px;
+    padding-left: 11%;
+}
+
+.image-content1{
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 10%;
+}
+
+.image-content2{
+    color: lightseagreen;
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 11%;
+}
+
+.image-button{
+    /*
+    position : relative 원래 위치를 기준으로 이동
+    position : absolute (relative인)부모를 기준으로 이동
+    */
+    position: absolute;
+    background: none;
+    border-radius: 10px;
+    left: 11.2%;
+    width: 100px;
+    height: 50px;
+    color: green;
+}
+
+.image-button:hover {
+    background-color: green; /* 마우스를 올렸을 때 배경색 변경 */
+    color: white;
+    text-decoration: underline;
+}
