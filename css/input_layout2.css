@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    background-color:darkolivegreen;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+div, input, textarea{
+    box-sizing: border-box;
+}
+
+div{
+    text-align: center;
+}
+
+div p{
+    font-weight: bold;
+    color:cadetblue
+}
+
+.component-signup input
+{
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid darkolivegreen;
+    border-radius: 15px;
+}
+
+.component-signup input[type=checkbox]
+{
+    width: 15px;
+}
+
+.component-signup textarea{
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid darkolivegreen;
+    border-radius: 15px;
+}
+
+.component-signup{
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    min-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border: 2px dashed darkolivegreen;
+    border-radius: 20px;
+}
+
+.sex input{
+    width: 3%;
+}
+
+
+#width-40
+{
+    width: 40%;
+    float: left;
+    margin-left: 30px;
+}
+
+.clear-both{
+    clear: both;
+}
+
+.buttons{
+    text-align: center;
+    margin: 10px;
+}
+
+.buttons input{
+    background-color: aquamarine;
+    width: auto;
+    font-weight: bold;
+    text-align: center;
+    color: darkolivegreen;
+    margin-right: 10px;
+}
+
+.component-signup input[type=submit]:hover,
+.component-signup input[type=submit]:active,
+.component-signup input[type=submit]:focus
+{
+    color: white;
+    font-weight: bold;
+    background:darkgreen;
+    border: 2px solid greenyellow;
+}
+
+.component-signup input[type=button]:hover
+{
+    color: white;
+    font-weight: bold;
+    background:darkgreen;
+    border: 2px solid greenyellow;
+}
