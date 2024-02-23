@@ -239,12 +239,25 @@ body{
     padding-left: 11.5%;
 }
 
-.back-image-img{
-    margin-top: -15%;
-    padding-left: 32%;
+.back-image-img1{
     width: 600px;
     height: auto;
-    border-radius: 20px;
+}
+
+.back-image-img2{
+    width: 750px;
+    height: auto;
+}
+
+.image-container {
+    display: flex; /* 자식 요소를 가로로 배치하기 위해 flexbox를 사용합니다. */
+    padding-left: 25%;
+    margin-top: -15%;
+}
+
+/* 필요에 따라 이미지 사이의 간격을 조절할 수 있습니다. */
+.image-container img + img {
+    margin-left: 20px; /* 이미지 사이의 간격을 조절합니다. */
 }
 
 .cherryblossom-image{
