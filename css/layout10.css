@@ -1,3 +1,25 @@
+body{
+    margin: 0;
+}
+
+.nav1_left{
+    float: left;
+    margin-top: 15px;
+}
+
+.nav1_right{
+    float: right;
+    height: 65px;
+}
+
+.img-icon
+{
+    width: 100px;
+    height: 100px;
+    margin-top: 2%;
+    margin-left: 80%;
+}
+
 .nav1 li
 {
     display: inline-block;
@@ -53,37 +75,6 @@
     padding-bottom: 35px;
 }
 
-.back-image{
-    background-image: url(../images/cafe.jpg);
-    width: 100%;
-    height: 800px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative
-}
-
-.image-title{
-    color: lightseagreen;
-    font-size: 24px;
-    padding-top: 100px;
-    padding-left: 11%;
-}
-
-.image-content1{
-    color: green;
-    font-weight: bold;
-    font-size: 30px;
-    padding-left: 10%;
-}
-
-.image-content2{
-    color: lightseagreen;
-    font-weight: bold;
-    font-size: 24px;
-    padding-left: 11%;
-}
-
 .image-button{
     /*
     position : relative 원래 위치를 기준으로 이동
@@ -93,13 +84,275 @@
     background: none;
     border-radius: 10px;
     left: 11.2%;
-    width: 100px;
-    height: 50px;
-    color: green;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border: 2px solid white;
 }
 
 .image-button:hover {
     background-color: green; /* 마우스를 올렸을 때 배경색 변경 */
     color: white;
     text-decoration: underline;
+}
+
+.cherryblossom-button{
+    float: right;
+    margin-right: 9%;
+    background: none;
+    color: pink;
+    border: 2px solid brown;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+.cherryblossom-button:hover,
+.cherryblossom-button:active,
+.cherryblossom-button:focus
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    background:brown;
+    border: 2px solid brown;
+}
+
+.springleft-button{
+    margin-right: 9%;
+    font-weight: bold;
+    background: none;
+    color:rgb(238, 57, 57);
+    border: 2px solid rgb(238, 57, 57);
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+.springleft-button:hover,
+.springleft-button:active,
+.springleft-button:focus
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    background:rgb(238, 57, 57);
+    border: 2px solid rgb(238, 57, 57);
+}
+
+.springcenter-button{
+    margin-right: 9%;
+    font-weight: bold;
+    background: none;
+    color:#ff4800;
+    border: 2px solid #ff4800;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+.springcenter-button:hover,
+.springcenter-button:active,
+.springcenter-button:focus
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    background:#ff4800;
+    border: 2px solid #ff4800;
+}
+
+.springright-button{
+    margin-right: 9%;
+    font-weight: bold;
+    background: none;
+    color:#ffee00;
+    border: 2px solid #ffee00;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+.springright-button:hover,
+.springright-button:active,
+.springright-button:focus
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    background:#ffee00;
+    border: 2px solid #ffee00;
+}
+
+.coffee-button{
+    margin-left: 3%;
+    font-weight: bold;
+    background: none;
+    color:white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+.coffee-button:hover,
+.coffee-button:active,
+.coffee-button:focus
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    background:black;
+    border: 2px solid black;
+}
+
+
+.back-image{
+    margin-top: -1%;
+    background-image: url(../images/leaves.jpg);
+    width: 100%;
+    height: 820px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.image-title{
+    color: rgb(16, 129, 31);
+    font-size: 24px;
+    padding-top: 10%;
+    padding-left: 11.5%;
+}
+
+.image-content1{
+    color: rgb(61, 194, 61);
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 10.5%;
+}
+
+.image-content2{
+    color: rgb(16, 129, 31);
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 11.5%;
+}
+
+.back-image-img{
+    margin-top: -15%;
+    padding-left: 32%;
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.cherryblossom-image{
+    margin-top: -2.5%;
+    background-image: url(../images/spring_1920.jpg);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.cherryblossom-title{
+    color: pink;
+    text-align: right;
+    font-weight: bold;
+    font-size: 32px;
+    padding-right: 9%;
+    padding-top: 8%;
+}
+
+.springleft-image{
+    float: left;
+    background-image: url(../images/strawberry_1280.jpg);
+    text-align: center;
+    width: 33.3%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    line-height: 0;
+}
+
+.springcenter-image{
+    float: left;
+    background-image: url(../images/grapefruit_1280.jpg);
+    text-align: center;
+    width: 33.3%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    line-height: 0;
+}
+
+.springright-image{
+    float: left;
+    background-image: url(../images/lemonade_1280.jpg);
+    text-align: center;
+    width: 33.4%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    line-height: 0;
+}
+
+.springleft-title{
+    color: rgb(238, 57, 57);
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 9%;
+    padding-top: 89%;
+}
+
+.springcenter-title{
+    color: #ff4800;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 9%;
+    padding-top: 22%;
+}
+
+.springright-title{
+    color: #ffee00;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 9%;
+    padding-top: 89%;
+}
+
+.coffee-image{
+    margin-top: -2.5%;
+    background-image: url(../images/coffee_1280.jpg);
+    width: auto;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    line-height: 0;
+    padding-left: 11%;
+}
+
+.coffee-title{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 8%;
+}
+
+.clear-both{
+    clear: both;
 }
