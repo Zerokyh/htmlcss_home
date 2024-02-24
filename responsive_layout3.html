@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-flex{
+            display: flex;
+            flex-wrap: wrap;    /* flex 안쪽에서 내 크기를 초과하면 밑으로 떨어지게 */
+            align-items: center;    /* flex 중앙정렬 */
+            justify-content: center;    /* flex 중앙정렬 */
+        }
+
+        .img-box{
+            background-image: url(./cat.jpg);
+            width: 40%;
+            height: 40vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        /* 태블릿 1200px 이하일 때*/
+        @media screen and (max-width:1200px) {
+            .img-box{
+                width: 50%;
+            }
+        }
+
+        /* 모바일 768px 이하일 때*/
+        @media screen and (max-width:768px) {
+            .img-box{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- div 백그라운드 이미지 : 웹에서는 한라인에 2개씩, 모바일에서는 한라인에 1개씩-->
+    <div class="my-flex">
+        <div class="img-box">
+        </div>
+        <div class="img-box">
+        </div>
+    </div>
+</body>
+</html>

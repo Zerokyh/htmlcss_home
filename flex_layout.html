@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 예제</title>
+    <style>
+        .my-box{
+            width: 800px;
+            height: 200px;
+            border: 2px dashed yellowgreen;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            /* flex-wrap: wrap; */
+        }
+
+        .my-box div{
+            width: 100px;
+            background: plum;
+        }
+    </style>
+</head>
+<body>
+    <!-- div 속성 display:flex; 내안에 있는 배치를 가로 또는 세로로 할 수 있음, 최신 버전에서만 적용-->
+
+    <!-- 기본은 세로 배치 -->
+
+    <!-- div 속성
+        display:flex;
+        flex-direction : row; 또는 column (기본값 row 가로 배치, column은 세로 배치)
+        alien-items : 교차축으로 정렬(row은 세로 정렬, column은 가로 정렬)
+        justify-content : (flex-direction 방향으로 정렬)
+        flex-wrap: wrap; (기본값은 크기를 초과해도 최대한 맞춤, wrap : 크기 초과하면 밑으로 떨어짐)
+        flex-grow: 1; (차지하는 비율을 자식에게 할당, 안주면 0 - 남는 공간을 나눠서 배치)
+    -->
+    
+    <div class="my-box">
+        <div style="flex-grow: 1;">first</div>
+        <div>second</div>
+        <div>third</div>
+        <div>fourth</div>
+    </div>
+   
+</body>
+</html>

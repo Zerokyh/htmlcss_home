@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: gainsboro;
+        }
+
+        .component-table h2{
+            padding-left: 5%;
+        }
+
+        .cart-div{
+            background-color: white;
+            border-radius: 15px;
+            width: 95%;
+            margin: auto;
+            padding: 5px;
+        }
+
+        .cart-table-1{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .cart-table-1 img{
+            width: 130px;
+            height: 130px;
+        }
+
+        .first-tr{
+            height: 60px;
+        }
+
+        .first-td{
+            border-bottom: 2px solid black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .first-td-end{
+            border-bottom: 2px solid black;
+            text-align: right;
+        }
+
+        .coupon{
+            background: none;
+            border: 1px solid rgb(11, 207, 11);
+            color: rgb(11, 207, 11);
+            width: 80px;
+            height: 30px;
+        }
+
+        .first-div{
+            padding-left: 50px;
+            width: auto;
+            line-height: 10px;
+        }
+
+        .second-tr{
+            border-bottom: 1px solid rgb(228, 228, 228);
+        }
+
+        .td-right{
+            border-right: 1px solid rgb(228, 228, 228);
+            padding: 10px;
+            line-height:3px;
+        }
+
+        .td-end{
+            padding: 10px;
+            line-height:3px;
+            text-align: center;
+        }
+
+        .modi-order{
+            background: none;
+            width: 80px;
+            height: 30px;
+            border-radius: 7px;
+            border: 1px solid rgb(228, 228, 228);
+        }
+
+        .green-button{
+            color: rgb(11, 207, 11);
+            background: none;
+            border: 1px solid rgb(11, 207, 11);
+            width: 80px;
+            height: 30px;
+            border-radius: 7px;
+        }
+
+        .end-tr{
+            height: 100px;
+        }
+
+        .end-td-3{
+            padding-left: 100px;
+            font-weight: bold;
+        }
+
+        .order-button{
+            background-color: rgb(7, 196, 7);
+            border-radius: 7px;
+            border: none;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            width: 220px;
+            height: 50px;
+        }
+        .bottom{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: black;
+            height: 70px;
+            color: white;
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .bottom-button{
+            background-color: rgb(7, 196, 7);
+            border-radius: 7px;
+            border: none;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            width: 220px;
+            height: 50px;
+            margin-right: 30px;
+        }
+
+        .bottom-font{
+            margin-left: 69%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 장바구니 -->
+    <div class="component-table">
+        <h2>장바구니</h2>
+        <div class="cart-div">
+            <table class="cart-table-1">
+                <tr class="first-tr">
+                    <td><input type="checkbox"></td>
+                    <td colspan="4" class="first-td">롯데칠성음료 공식 스토어</td>
+                    <td class="first-td-end">
+                        <button class="coupon">쿠폰받기</button>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="second-tr">
+                    <td><input type="checkbox"></td>
+                    <td colspan="2" style="float: left; width: 45px;">
+                        <img src="./images/cider.jpg" style="padding-top: 4px;">
+                    </td>
+                    <td class="td-right">
+                        <div class="first-div">
+                            <h4>[직영] 칠성사이다제로 1.5L 12팻</h4>
+                            <p style="font-weight: bold;">31,500원</p>
+                            <p style="color: rgb(129, 129, 129);">롯데칠성음료 공식 스토어 | 스마트스토어</p>
+                        </div>
+                    </td>
+                    <td class="td-right">
+                        <p>상품 주문 수량 : 1개</p>
+                        <button class="modi-order">주문수정</button>
+                    </td>
+                    <td class="td-right" style="text-align: center;">
+                        <p style="font-size: 13px;">상품 금액</p>
+                        <p style="font-weight: bold;">31,500원</p>
+                        <button class="green-button">주문하기</button>
+                    </td>
+                    <td class="td-end">
+                        <p style="font-size: 13px;">배송비</p>
+                        <p style="font-weight: bold;">무료</p>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="end-tr">
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="end-td-3">
+                        <table>
+                            <tr>
+                                <td style="width: 25%;">
+                                    <p>선택상품금액</p>
+                                    <p>31,500원</p>
+                                </td>
+                                <td style="text-align: center;">+</td>
+                                <td style="width: 25%;">
+                                    <p>총 배송비</p>
+                                    <p>0원</p>
+                                </td>
+                                <td style="text-align: center;">-</td>
+                                <td style="width: 25%;">
+                                    <p>즉시할인예상금액</p>
+                                    <p style="color: red;">0원</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="font-weight: bold;">
+                        <div style="float: left;">주문금액</div><div style="float: left; color: rgb(11, 207, 11);">&nbsp;31,500원</div>
+                    </td>
+                    <td colspan="2">
+                        <button class="order-button">롯데칠성음료 공식 스토어 1건 주문하기</button>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div class="bottom">
+            <div class="bottom-font">총 1건 주문금액 &nbsp;&nbsp;31,500원</div>
+            <button class="bottom-button">주문하기</button>
+        </div>
+    </div>
+</body>
+</html>
