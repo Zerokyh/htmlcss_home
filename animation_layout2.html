@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 샘플</title>
+    <style>
+        .oneline{
+            background: purple;
+            width: 300px;
+            transition: color 1s, background 1s;
+        }
+
+        .oneline:hover{
+            background: violet;
+        }
+
+        .oneline:hover span{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="oneline">
+        <span>마우스를 올리면 색이 바뀝니다</span>
+    </div>
+    <!-- 마우스를 올리면 1초 동안 violet이 되게 글자색은 흰색 -->
+</body>
+</html>
